@@ -1,0 +1,7 @@
+GROUP BY
+
+    QUERY 1 - Contare quanti iscritti ci sono stati ogni anno
+
+        SELECT COUNT(*) AS 'n_students', YEAR (`enrolment_date`) AS `academic_year` 
+        FROM `students` 
+        GROUP BY `academic_year`;
